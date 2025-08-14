@@ -1,6 +1,8 @@
  # j.s-practice
+ author Faran Zafar
+ <br>
 this is my js and my small projects practice repositary like 
-author Faran Zafar
+
 1. front-end of websits(amazone,directory)
 2. responsive navbar
 3. css practice
