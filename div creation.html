@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Div Creation with Images</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        padding: 30px;
+      }
+      .input-container {
+        margin-bottom: 20px;
+        display: flex;
+      }
+      input[type="text"], input[type="file"], select {
+        padding: 8px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        padding: 8px 16px;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+      .output-container {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .data-div {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 16px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .square {
+        width: 180px;
+        height: 180px;
+      }
+      .rectangle {
+        width: 260px;
+        height: 140px;
+      }
+      .data-div img {
+        max-width: 100%;
+        max-height: 100px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        object-fit: cover;
+      }
+      .remove-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: #dc3545;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0;
+        display: none; /* Hide by default */
+      }
+      .remove-btn.admin-visible {
+        display: block; /* Show only for admin */
+      }
+      .remove-btn:hover {
+        background: #b52a37;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input-container">
+      <input type="text" id="userInput" placeholder="Enter some value" />
+      <input type="file" id="imgInput" accept="image/*" />
+      <select id="shapeSelect">
+        <option value="square">Square</option>
+        <option value="rectangle">Rectangle</option>
+      </select>
+      <button onclick="addData()">Add</button>
+    </div>
+    <div class="output-container" id="output"></div>
+
+    <script>
+      // Set this variable to true if the current user is admin
+      // In a real app, this should be set securely from the backend
+      const isAdmin = true; // Change to false to simulate non-admin
+
+      function addData() {
+        const input = document.getElementById('userInput');
+        const imgInput = document.getElementById('imgInput');
+        const shape = document.getElementById('shapeSelect').value;
+        const value = input.value.trim();
+
+        if (!value && !imgInput.files.length) return;
+
+        const output = document.getElementById('output');
+        const div = document.createElement('div');
+        div.className = `data-div ${shape}`;
+
+        // Remove button (only visible to admin)
+        const removeBtn = document.createElement('button');
+        removeBtn.className = 'remove-btn';
+        if (isAdmin) removeBtn.classList.add('admin-visible');
+        removeBtn.innerHTML = '&times;';
+        removeBtn.title = 'Remove';
+        removeBtn.onclick = function() {
+          output.removeChild(div);
+        };
+        div.appendChild(removeBtn);
+
+        // If image is selected, read and show it
+        if (imgInput.files.length) {
+          const file = imgInput.files[0];
+          const reader = new FileReader();
+          reader.onload = function(e) {
+            const img = document.createElement('img');
+            img.src = e.target.result;
+            div.appendChild(img);
+            if (value) {
+              const text = document.createElement('div');
+              text.textContent = value;
+              div.appendChild(text);
+            }
+            output.appendChild(div);
+          };
+          reader.readAsDataURL(file);
+        } else {
+          if (value) {
+            const text = document.createElement('div');
+            text.textContent = value;
+            div.appendChild(text);
+            output.appendChild(div);
+          }
+        }
+
+        input.value = '';
+        imgInput.value = '';
+      }
+
+      // Optional: allow pressing Enter to add data
+      document.getElementById('userInput').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          addData();
+        }
+      });
+    </script>
+  </body>
+</html>

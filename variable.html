@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable.html</title>
+</head>
+<body>
+    <script>
+        // Demonstrating var variable behavior
+        var message = "Hello, World!";
+        var message = "Hello, Universe!";//rediclaration
+        message = "Hello, Galaxy!";//reassignment
+        //global scope
+        console.log(message); // Output: Hello, Universe!
+
+        // Demonstrating let variable behavior
+        let greeting = "Hi there!";
+        // let greeting = "Hello again!"; // This will cause an error: Identifier 'greeting' has already been declared
+        greeting = "Hello again!"; // reassignment is allowed
+        //block scope
+        console.log(greeting);
+
+        // Demonstrating const variable behavior
+        const pi = 3.14;
+        // const pi = 3.14159; // This will cause an error: Identifier 'pi' has already been declared
+        // pi = 3.14159; // This will cause an error: Assignment to
+       //block scope
+        console.log(pi);
+    </script>
+</body>
+</html>

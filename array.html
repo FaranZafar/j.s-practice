@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array in js</title>
+  </head>
+  <body><h1 id="hallo">hello welcome</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script> 
+      // // Ask the user to enter numbers separated by commas
+      // const input = prompt(
+      //   "Enter numbers separated by commas (e.g., 1,2,3,4):"
+      // );
+      // // Split the input string into an array, trim spaces, and convert to numbers
+      // const myarr = input
+      //   .split(",")
+      //   .map((num) => Number(num.trim()))
+      //   .filter((num) => !isNaN(num)); // Remove any non-number entries
+
+      // console.log("Array of numbers:", myarr);
+      // alert("Numbers stored in array: " + myarr.join(", "));
+
+      // -------------------Array methods-------------------
+
+          const months =["january","february","march","april","may"];
+          const numbers=[6,5,4,3,2,1];
+          console.log(months)
+         //push()
+        //  months.push('june','july','a',1,true);
+        //  console.log(months)
+        // 2-pop()
+      //  let a= months.pop();
+      //   console.log(months);
+
+      //   console.log(a)
+
+      // 3-shift()
+      // months.shift();
+      // months.shift();
+      // months.shift();
+      // console.log(months)
+     // 4-unshift()
+    //  const xyz=[1,2,3,4,5]
+    //  months.unshift(xyz);
+    //  console.log(months)
+    //-------concat--------
+   //  const month2=["june","july","agust","september","navember","december"];
+  // const newarr= months.concat(month2,month2,month2)
+ //  console.log(newarr);
+      //-----------join()------
+     //  const newjoin= months.join(' $');
+    //   console.log(newjoin);
+       //-----------isArray()----------
+      // const check=  Array.isArray(months);
+     // console.log(check);
+    // console.log(typeof(months))
+      //------------foreach()---------
+      // numbers.forEach(myFun);
+      // function myFun(value,index,Array) {
+      //    console.log(index);
+      // }
+      // let sum =0;
+      // numbers.forEach((p,index,Array)=>{
+      //   sum+=p;
+      //  console.log("sum="+sum);
+      // });
+      //--------map-----------
+      //  const num= numbers.map((value)=>{
+      //    return value*10;
+      //   });
+      //   console.log(num)
+     // -----------sort--------------
+    //  numbers.sort(function(a,b){
+    //   return a-b;
+    //  });
+    //  console.log(numbers);
+    // ------------reverse method----------
+    // months.sort();
+    // console.log(months)
+    //  months.reverse();
+    //  console.log(months)
+     //--------------tosorted()------------
+    //  const a= months.toSorted();
+   //   console.log(a);
+   //------------map()-------------
+  //  let result =numbers.map((value)=>{
+  //   return value*2
+  //  })
+  //  console.log(result);
+  //  result.map((value)=>{
+  //      console.log( value*4);
+  //  })
+   
+  //  //----------foreach()--------------
+  //  let result2 =numbers.forEach((value)=>{
+   
+  //  return value*2;
+  //  })
+  //  console.log(result2);
+  //     let result3 =numbers.forEach((value)=>{
+   
+  //  console.log(value*2) ;
+  //  })
+  //---------------toReversed-----------------
+  //-------------lenght---------------
+  //lenght method is used to find the lenght of an array
+  // numbers.length=2;
+  //  console.log(numbers.length);
+  // console.log(numbers)
+  //------------tostring()-----------
+  // returns element of an array by comma separated strings
+  // console.log(numbers.toString());
+  //------------join()-----------
+
+  //join method works as tostring() but in addition you can sapacify your separater
+
+  // console.log(numbers.join(' $'))
+  //-----------at()------------
+  //at method is used to get any element of an array using index value.
+
+  // console.log(numbers.at(3));
+  //-------------[]----------
+  //sequare brackets also work as at() method
+  // console.log(numbers[3]);
+  //-----------pop()--------------
+  //pop() method is used to remove elements end of an array
+
+  // console.log(months.pop());
+  // console.log(months.pop());
+  // console.log(months.pop());
+  // console.log(months)
+  //-----------push()------------
+  //push method is used to add elements in the end of array.
+  // months.push('june','july',"agust");
+  // console.log(months)
+  //------------shifting()---------------
+  //shifting() method is used to remove first element of an array.
+
+  // let element = months.shift();
+  // console.log(element);
+  // console.log(months);
+  //------------unshifting()-----------------
+  // unshift( ) method is used to add element in the start of array.
+
+  // months.unshift("june");
+  // console.log(months);
+   //------------changing elements----------------
+   //it used to index number to replace the value.
+  //  months[3]="june";
+  //  console.log(months);
+  //------------array lenght------------
+  //array lenght method is used yo add elements in the end of array.
+
+  // months[months.length]="june";
+  // months[months.length]="july";
+  // console.log(months);
+  //-------------delete()------------
+  // delete method is used to remove element of an array using index number and its leave the empty space of that element. 
+  // delete months[0];
+  // console.log(months);
+  // months.shift();
+  // console.log(months)
+  //------------concat()--------------
+  //concat method is used to concat arrays end-to-end encrypted and merging
+   
+//  const arr1= months.concat(numbers);
+//   console.log(arr1);
+//-----------copyWithin()---------------
+// months.copyWithin(0,2);
+// console.log(months);
+//------------flat()--------------
+//flat method is used to combine arrays within arrays;
+// const myarr=[[1,3],[2,4],[5,6]];
+//  let element2=myarr.flat();
+// console.log(element2);
+//-----------
+
+    </script>
+  </body>
+</html>

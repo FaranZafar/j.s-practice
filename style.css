@@ -1,0 +1,20 @@
+/* .box{
+    width: 200px;
+    height: 200px;
+    background-image: url("1000056796.jpg");
+    background-size: cover;
+    border-radius: 20px;
+   
+} */
+ .head{
+    background-color: blue;
+ }
+ .box{
+    width: 200px;
+    height: 200px;
+    background-image: url("1000056796.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+ }

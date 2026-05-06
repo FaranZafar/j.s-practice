@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show div</title>
+    <style>
+        
+        .hidden{
+            visibility: hidden;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            display: block;
+            background-color: red;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .head{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+        .showdivs{
+            background-color: rgb(69, 69, 176);
+            color: white;
+            border-radius: 6px;
+            text-align: center;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 16px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+     
+    </style>
+</head>
+<body>
+    <button id="toggleBtn" class="showdivs" aria-expanded="false">Show images</button>
+
+    <div class="head" id="boxesContainer">
+        <div class="box hidden"><img src="./one.avif" alt="image one"></div>
+        <div class="box hidden"><img src="./two.avif" alt="image two"></div>
+        <div class="box hidden"><img src="./three.avif" alt="image three"></div>
+    </div>
+    <script>
+        document.getElementById("toggleBtn").addEventListener("click",function(){
+            document.querySelectorAll(".box").forEach(function(div){
+                div.classList.remove("hidden");
+            });
+        });
+    </script>
+</body>
+</html>

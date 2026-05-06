@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typed js</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text{
+            font-size: 60px;
+            font-weight: 600;
+        }
+        .text span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="text">I'm a <span class="good"></span></div> -->
+     <div class="text">I'm a <span class="typing">Software Engineer</span></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+//    var typing = new Typed(".good",{
+
+//              strings: ["Youtuber", "Software Engineer", "Web developer"],
+//             typeSpeed: 100,
+//             backSpeed:60,
+//             loop:true
+
+
+//         });
+
+  var typing = new Typed(".typing" ,{
+     
+   strings: ["Software Engineer", "Web developer", "App developer"],
+    typeSpeed:100,
+    backSpeed:100,
+    backDelay:1000,
+    loop:true
+
+
+
+
+
+  })
+    </script>
+    <!-- gjuq qtnt ttas ifls, gjuq qtnt ttas ifls -->
+
+    <!-- No additional code needed here for the current functionality -->
+</body>
+</html>
