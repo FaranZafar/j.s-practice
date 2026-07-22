@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Local Web Design & SEO Services in Austin, TX | Software Solutions</title>
+  <meta name="description" content="Software Solutions helps local Austin businesses grow with fast, custom websites, high-converting e-commerce stores, and local SEO strategies that drive leads.">
+  <meta name="keywords" content="web development for local businesses, Austin local web design, small business web design, local SEO services, high converting websites">
+   
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#hero">Software<span class="text-white">Solutions</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary fw-semibold fs-7">Get a Free Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero-section py-5 d-flex align-items-center">
+    <div class="container py-lg-5">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill fw-semibold">Local Web Development Experts</span>
+          <h1 class="display-4 fw-bold mb-3 text-dark">Turn Online Visitors Into Paying Local Customers</h1>
+          <p class="lead mb-4 text-muted fs-5">We design fast, mobile-ready websites and run local SEO strategies engineered specifically for restaurants, contractors, salons, and retail shops in Austin.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#contact" class="btn btn-primary btn-lg fw-semibold shadow-sm">Get Your Free Consultation</a>
+            <a href="#portfolio" class="btn btn-outline-secondary btn-lg fw-semibold">View Our Work</a>
+          </div>
+          <div class="mt-4 pt-3 border-top d-flex align-items-center gap-4 text-muted fs-7">
+            <div><i class="bi bi-check-circle-fill text-success me-1"></i> Delivered in 3–5 Days</div>
+            <div><i class="bi bi-check-circle-fill text-success me-1"></i> 100% Mobile Optimized</div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card border-0 shadow-lg p-4 rounded-4 bg-white">
+            <h3 class="h4 fw-bold mb-2">Claim Your Free Site Audit</h3>
+            <p class="text-muted small mb-4">Want to see why your current site isn't converting? We'll review it for free.</p>
+            <form id="heroAuditForm">
+              <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" placeholder="Business Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="url" class="form-control form-control-lg" placeholder="Website URL (if you have one)">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control form-control-lg" placeholder="Email Address" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100 fw-semibold">Send Me My Free Audit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container py-lg-4">
+      <div class="text-center max-w-750 mx-auto mb-5">
+        <h2 class="fw-bold mb-2">High-Impact Digital Services for Local Businesses</h2>
+        <p class="text-muted">Everything you need to build credibility, rank on Google, and convert clicks into phone calls.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-4 rounded-3 text-center service-card">
+            <div class="icon-box bg-primary-subtle text-primary mx-auto mb-3">
+              <i class="bi bi-laptop fs-3"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Custom Website Design</h3>
+            <p class="text-muted small">Stop losing customers to outdated design. We build ultra-fast, mobile-responsive websites that look crisp and push visitors to call, book, or buy.</p>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-4 rounded-3 text-center service-card">
+            <div class="icon-box bg-primary-subtle text-primary mx-auto mb-3">
+              <i class="bi bi-shop fs-3"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-2">E-Commerce Setup</h3>
+            <p class="text-muted small">Turn your retail store or salon into a 24/7 revenue engine. Simple online ordering, gift cards, and secure checkout systems designed for your local patrons.</p>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-4 rounded-3 text-center service-card">
+            <div class="icon-box bg-primary-subtle text-primary mx-auto mb-3">
+              <i class="bi bi-geo-alt fs-3"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Google Business & Local SEO</h3>
+            <p class="text-muted small">Show up where it matters most: Google's "Map Pack." We optimize your Google Business profile and on-page SEO so local customers find you first.</p>
+          </div>
+        </div>
+        <!-- Service 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-4 rounded-3 text-center service-card">
+            <div class="icon-box bg-primary-subtle text-primary mx-auto mb-3">
+              <i class="bi bi-shield-check fs-3"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Website Care & Maintenance</h3>
+            <p class="text-muted small">Focus on running your business while we handle backups, security patches, plugin updates, and content changes every single month.</p>
+          </div>
+        </div>
+        <!-- Service 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-4 rounded-3 text-center service-card">
+            <div class="icon-box bg-primary-subtle text-primary mx-auto mb-3">
+              <i class="bi bi-funnel fs-3"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Lead Funnels & Booking</h3>
+            <p class="text-muted small">Integrate online appointment scheduling, custom contact forms, and instant booking software directly into your site to reduce admin work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me / Us Section -->
+  <section id="about" class="py-5">
+    <div class="container py-lg-4">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <div class="p-4 bg-primary text-white rounded-4 shadow-lg">
+            <div class="display-3 fw-bold mb-0">80+</div>
+            <p class="fs-5 fw-semibold border-bottom pb-3">Local Business Websites Launched</p>
+            <p class="mb-0 text-white-50">Over 5 years of experience helping neighborhood businesses establish a dominant digital footprint without breaking the bank.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <span class="text-primary fw-bold text-uppercase tracking-wide small">Why Choose Software Solutions</span>
+          <h2 class="fw-bold mb-3 mt-1">Your Local Business Partner, Not Just Another Agency</h2>
+          <p class="text-muted">Most web agencies charge high upfront fees and disappear after launch. We do things differently. We specialize strictly in helping brick-and-mortar storefronts, tradespeople, and local services dominate their local markets.</p>
+          <div class="row g-3 mt-2">
+            <div class="col-sm-6">
+              <h4 class="h6 fw-bold mb-1"><i class="bi bi-lightning-charge text-primary me-2"></i>Rapid 5-Day Delivery</h4>
+              <p class="text-muted small mb-0">Get your site live in days, not months.</p>
+            </div>
+            <div class="col-sm-6">
+              <h4 class="h6 fw-bold mb-1"><i class="bi bi-coin text-primary me-2"></i>Fair, Clear Pricing</h4>
+              <p class="text-muted small mb-0">No surprise fees or expensive retainers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio / Projects Section -->
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container py-lg-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+        <div>
+          <h2 class="fw-bold mb-2">Proven Results for Real Businesses</h2>
+          <p class="text-muted mb-0">Explore how we helped neighborhood companies improve their online presence and revenues.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+            <div class="bg-secondary text-white p-4 text-center py-5">
+              <i class="bi bi-journal-richtext fs-1 opacity-50"></i>
+              <div class="mt-2 fw-semibold">Main St. Bistro</div>
+            </div>
+            <div class="card-body p-4">
+              <span class="badge bg-light text-dark border mb-2">Restaurant / Hospitality</span>
+              <h3 class="h5 fw-bold card-title mb-2">Main Street Bistro</h3>
+              <p class="card-text text-muted small mb-3"><strong>Problem:</strong> Outdated PDF menus and zero online reservation options.</p>
+              <div class="p-2 bg-success-subtle text-success-emphasis rounded small">
+                <strong>Result:</strong> +45% online reservations in the first 30 days.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+            <div class="bg-secondary text-white p-4 text-center py-5">
+              <i class="bi bi-tools fs-1 opacity-50"></i>
+              <div class="mt-2 fw-semibold">Apex Plumbing Co.</div>
+            </div>
+            <div class="card-body p-4">
+              <span class="badge bg-light text-dark border mb-2">Contractor / Home Services</span>
+              <h3 class="h5 fw-bold card-title mb-2">Apex Plumbing Co.</h3>
+              <p class="card-text text-muted small mb-3"><strong>Problem:</strong> Poor mobile performance and zero local search visibility.</p>
+              <div class="p-2 bg-success-subtle text-success-emphasis rounded small">
+                <strong>Result:</strong> #1 ranking on Google Maps for local service keywords.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+            <div class="bg-secondary text-white p-4 text-center py-5">
+              <i class="bi bi-scissors fs-1 opacity-50"></i>
+              <div class="mt-2 fw-semibold">Glow Beauty Salon</div>
+            </div>
+            <div class="card-body p-4">
+              <span class="badge bg-light text-dark border mb-2">Salon / Wellness</span>
+              <h3 class="h5 fw-bold card-title mb-2">Glow Beauty Salon</h3>
+              <p class="card-text text-muted small mb-3"><strong>Problem:</strong> Phone calls constantly missed while servicing existing clients.</p>
+              <div class="p-2 bg-success-subtle text-success-emphasis rounded small">
+                <strong>Result:</strong> Integrated automated 24/7 online booking system.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+            <div class="bg-secondary text-white p-4 text-center py-5">
+              <i class="bi bi-bag-heart fs-1 opacity-50"></i>
+              <div class="mt-2 fw-semibold">Urban Threads Boutique</div>
+            </div>
+            <div class="card-body p-4">
+              <span class="badge bg-light text-dark border mb-2">Retail / E-Commerce</span>
+              <h3 class="h5 fw-bold card-title mb-2">Urban Threads Boutique</h3>
+              <p class="card-text text-muted small mb-3"><strong>Problem:</strong> Storefront foot traffic declined due to rain and seasonality.</p>
+              <div class="p-2 bg-success-subtle text-success-emphasis rounded small">
+                <strong>Result:</strong> Launched an e-commerce store with in-store pickup options.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center max-w-750 mx-auto mb-5">
+        <h2 class="fw-bold mb-2">What Our Clients Say</h2>
+        <p class="text-muted">Real reviews from local business owners who partnered with Software Solutions.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm p-4 rounded-3 h-100">
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="fst-italic text-muted mb-4">"Software Solutions completely transformed our online ordering system. Before working with them, our phones were constantly ringing off the hook during dinner rush. Now customers place orders online easily. Highly recommended!"</p>
+            <div class="d-flex align-items-center mt-auto">
+              <div>
+                <h4 class="h6 fw-bold mb-0">Marco Rossi</h4>
+                <small class="text-muted">Owner, Main Street Bistro</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm p-4 rounded-3 h-100">
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="fst-italic text-muted mb-4">"Within 60 days of launching our new site and getting our Google Maps profile optimized, our daily call volume doubled. Fast turnaround and zero technical jargon!"</p>
+            <div class="d-flex align-items-center mt-auto">
+              <div>
+                <h4 class="h6 fw-bold mb-0">Sarah Jenkins</h4>
+                <small class="text-muted">Founder, Apex Plumbing Co.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Get a Quote Section -->
+  <section id="contact" class="py-5 bg-dark text-white position-relative">
+  <div class="container py-lg-4">
+    <div class="row gy-5 align-items-center">
+      
+      <!-- Left Column: Info & Value Prop -->
+      <div class="col-lg-5">
+        <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill fw-semibold text-uppercase">Let's Connect</span>
+        <h2 class="display-6 fw-bold text-white mb-3">Ready to Upgrade Your Online Presence?</h2>
+        <p class="text-white-50 mb-4 fs-6">
+          Fill out the form to request a free quote or schedule a 15-minute consultation. We usually respond within 2-4 business hours.
+        </p>
+
+        <div class="d-flex flex-column gap-3 mt-4">
+          <div class="d-flex align-items-center p-3 rounded-3 bg-secondary bg-opacity-25 border border-secondary border-opacity-25">
+            <div class="icon-box bg-primary text-white me-3 flex-shrink-0">
+              <i class="bi bi-telephone fs-5"></i>
+            </div>
+            <div>
+              <small class="text-white-50 d-block">Call or Text Us</small>
+              <a href="tel:5125550199" class="text-white fw-bold text-decoration-none fs-6">(512) 555-0199</a>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center p-3 rounded-3 bg-secondary bg-opacity-25 border border-secondary border-opacity-25">
+            <div class="icon-box bg-primary text-white me-3 flex-shrink-0">
+              <i class="bi bi-envelope fs-5"></i>
+            </div>
+            <div>
+              <small class="text-white-50 d-block">Email Us</small>
+              <a href="mailto:hello@softwaresolutions.com" class="text-white fw-bold text-decoration-none fs-6">hello@softwaresolutions.com</a>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center p-3 rounded-3 bg-secondary bg-opacity-25 border border-secondary border-opacity-25">
+            <div class="icon-box bg-primary text-white me-3 flex-shrink-0">
+              <i class="bi bi-geo-alt fs-5"></i>
+            </div>
+            <div>
+              <small class="text-white-50 d-block">Service Area</small>
+              <span class="text-white fw-bold fs-6">Austin, TX &amp; Surrounding Areas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Form -->
+      <div class="col-lg-7">
+        <div class="card border-0 p-4 p-md-5 rounded-4 shadow-lg bg-white text-dark">
+          <h3 class="h4 fw-bold mb-1">Request a Free Quote</h3>
+          <p class="text-muted small mb-4">No pressure, no obligation. Let's talk about your project.</p>
+          
+          <!-- Alert Notification Box -->
+          <div id="formAlert" class="alert d-none rounded-3 mb-4" role="alert"></div>
+
+          <form id="contact-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="userName" class="form-label small fw-semibold">Your Name <span class="text-danger">*</span></label>
+                <input type="text" id="userName" name="name" class="form-control form-control-lg fs-6" placeholder="John Doe" required>
+              </div>
+              <div class="col-md-6">
+                <label for="businessName" class="form-label small fw-semibold">Business Name <span class="text-danger">*</span></label>
+                <input type="text" id="businessName" name="businessname" class="form-control form-control-lg fs-6" placeholder="My Local Shop" required>
+              </div>
+              <div class="col-md-6">
+                <label for="userEmail" class="form-label small fw-semibold">Email Address <span class="text-danger">*</span></label>
+                <input type="email" id="userEmail" name="email" class="form-control form-control-lg fs-6" placeholder="john@example.com" required>
+              </div>
+              <div class="col-md-6">
+                <label for="userPhone" class="form-label small fw-semibold">Phone Number</label>
+                <input type="tel" id="userPhone" name="number" class="form-control form-control-lg fs-6" placeholder="(512) 000-0000">
+              </div>
+              <div class="col-12">
+                <label for="serviceType" class="form-label small fw-semibold">Service Needed</label>
+                <select id="serviceType" name="service" class="form-select form-select-lg fs-6">
+                  <option value="Custom Website Design" selected>Custom Website Design</option>
+                  <option value="E-Commerce Setup">E-Commerce Setup</option>
+                  <option value="Local SEO & Google Maps">Local SEO &amp; Google Maps</option>
+                  <option value="Website Care & Maintenance">Website Maintenance</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="userMessage" class="form-label small fw-semibold">Project Details</label>
+                <textarea id="userMessage" name="project" class="form-control fs-6" rows="4" placeholder="Tell us about your current website or goals..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" id="submitBtn" class="btn btn-primary btn-lg w-100 fw-semibold d-flex align-items-center justify-content-center gap-2">
+                  <span>Send Request</span>
+                  <i class="bi bi-send-fill fs-6"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white-50 py-4 border-top border-secondary">
+    <div class="container text-center text-md-between d-md-flex align-items-center">
+      <p class="mb-2 mb-md-0 small">&copy; Software Solutions. All rights reserved.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#" class="text-white-50 fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white-50 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white-50 fs-5"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="main.js"></script>
+</body>
+</html>
